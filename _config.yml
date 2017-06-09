@@ -2,12 +2,15 @@
 name: MZZZ
 email: zqk_mz@136.com
 author: MZ
-url: http://www.hifreud.com
-resume_site: http://www.hifreud.com/Resume.io/
-github: https://github.com/luoyan35714/
+#个人网站
+url: https://github.com
+#简历地址
+resume_site: 
+github: https://github.com/MZqk/
+#项目名
 baseurl: 
 description: Actually, less is more!
-meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+meta_description: MZ;Blog;学而不思则罔;思而不学则殆;生命不止;折腾不休
 motto: It's our wits that make us men.
 banner: 学而不思则罔，思而不学则殆。
 
@@ -27,11 +30,11 @@ baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
 
 FB:
   comments :
-    provider : yungentie
+    provider : 
     duoshuo:
-        short_name : luoyan35714
+        short_name : 
     disqus :
-        short_name : freudkang
+        short_name : 
     # facebook :
     #   appid : 123
     #   num_posts: 5

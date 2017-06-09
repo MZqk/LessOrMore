@@ -12,15 +12,13 @@ header: 打赏
 
 如果在你开发或学习过程中本博客帮助到了你...
 
-你可以对本博客[小额赞助]({{ '/donate/method' | prepend: site.baseurl }})一下，让我有动力继续写出更高质量的文章。
+你可以对本博客[小额赞助]({{ '/donate/method' | prepend: site.baseurl }})一下
 
-点击上面小额赞助即可呦！
+
 <br>
 
-![Thank you very much!]({{ '/styles/images/freud.jpg' | prepend: site.baseurl }})
+![Thank you very much!]({{ '/styles/images/thanks.jpg' | prepend: site.baseurl }})
 <br>
-
->声明: 此博客空间用于分享作者个人的一些技术相关， 此网站基于[MIT开源协议](https://github.com/luoyan35714/LessOrMore/blob/master/LICENSE)所有内容完全免费，请放心使用。
 
 <hr>
 
@@ -41,7 +39,7 @@ header: 打赏
 <hr>
 您可以选择手机微信扫一扫
 
-![微信二维码付款给Freud]({{ '/styles/images/weixin.png' | prepend: site.baseurl }})
+![微信加好友]({{ '/styles/images/weixin.png' | prepend: site.baseurl }})
 
 <br>
 <br>

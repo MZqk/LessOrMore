@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 推荐博客
-permalink: /reference/
+title: 我的收藏
+permalink: /collect/
 ---
 
 * content

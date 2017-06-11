@@ -5,14 +5,18 @@ author: MZ
 #个人网站
 url: https://github.com
 #简历地址
-resume_site: 
+resume_site: http://www.baidu.com
 github: https://github.com/MZqk/
 #项目名
 baseurl: 
-description: Actually, less is more!
-meta_description: MZ;Blog;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+描述
+description: 
+
+meta_description: MZ;Blog;
+座右铭
+motto: 
+标语
+banner: 
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
@@ -20,7 +24,7 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-github_username: luoyan35714
+github_username: MZqk
 highlighter: Pygments
 
 # Build settings

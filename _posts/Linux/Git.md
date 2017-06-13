@@ -1,3 +1,20 @@
+---
+layout: post
+#标题配置
+title:  Git使用方法
+#时间配置
+date:   2017-06-13 14:08:00 +0800
+#大类
+categories: Linux
+#小类
+tag: bash 
+
+---
+
+* content
+{:toc}
+
+
 ## Git 配置
 添加git信息
 ```bash

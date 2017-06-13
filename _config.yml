@@ -9,13 +9,13 @@ resume_site: http://www.baidu.com
 github: https://github.com/MZqk/
 #项目名
 baseurl: 
-描述
+#描述
 description: 
 
 meta_description: MZ;Blog;
-座右铭
+#座右铭
 motto: 
-标语
+#标语
 banner: 
 
 #permalink: /:categories/:year/:month/:day/:title/

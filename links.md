@@ -8,16 +8,21 @@ permalink: /links/
 {:toc}
 
 
-2017书单
------------------------------------------------------------------
+## 学习组
+[菜鸟教程](http://www.runoob.com/)
+[实验楼](https://www.shiyanlou.com/)
+[慕课网](http://www.imooc.com/)
 
-+ 《Think in java 4th》
-+ 《鸟哥的Linux私房菜基础学习篇-第三版》
-+ 《重构》
-+ 《Getting real》
-+ 《深入JVM虚拟机》
-+ 《Head first设计模式》
-+ 《算法(第四版)》
-+ 《Maven实战》
-+ 《HTTP协议详解》
-+ 《TCP/IP协议详解-卷一》
+## 工具栏
+[百度脑图](http://naotu.baidu.com/home)
+[程序员工具](http://tool.lu/)
+[谷歌翻译](https://translate.google.cn/)
+[Linux命令大全](http://man.linuxde.net/)
+[base转码](http://base64.xpcha.com/indexie.php)
+
+## 论坛区
+[deepin论坛](https://bbs.deepin.org/)
+[segmentfault](https://segmentfault.com/）
+
+## 娱乐圈
+[利器](http://liqi.io/)

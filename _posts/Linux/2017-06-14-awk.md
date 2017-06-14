@@ -1,0 +1,80 @@
+# awk
+## awk语法
+|参数|说明|
+---|---
+-F|以指定字符作为分割字段
+## awk用法
+
+打印/etc/passwd内容
+```
+awk '{print}' /etc/passwd
+```
+>root:x:0:0:root:/root:/bin/bash    
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+
+以冒号为分隔符取1、3、6位内容
+```
+awk -F ":" '{print $1 $3 $6}' /etc/passwd
+```
+>bin2/bin   
+sys3/dev    
+sync4/bin
+games5/usr/games    
+man6/var/cache/man  
+lp7/var/spool/lpd
+mail8/var/mail  
+news9/var/spool/news    
+uucp10/var/spool/uucp   
+proxy13/bin 
+www-data33/var/www  
+backup34/var/backups    
+
+取出内容以Tab建作为分隔符
+```
+awk -F ":" '{print $1 "\t" $3 "\t" $6}' /etc/passwd
+```
+>root    0       /root  
+daemon  1       /usr/sbin   
+bin     2       /bin    
+sys     3       /dev    
+sync    4       /bin
+games   5       /usr/games  
+man     6       /var/cache/man  
+lp      7       /var/spool/lpd  
+mail    8       /var/mail   
+news    9       /var/spool/news     
+uucp    10      /var/spool/uucp     
+proxy   13      /bin    
+www-data        33      /var/www    
+backup  34      /var/backups
+
+内容加以排版
+```
+awk -F ":" '{print "ID="$1 "\t 家目录="$6}' /etc/passwd
+```
+>ID=root    家目录=/root  
+ID=daemon        家目录=/usr/sbin   
+ID=bin   家目录=/bin    
+ID=sys   家目录=/dev    
+ID=sync  家目录=/bin    
+ID=games         家目录=/usr/games  
+ID=man   家目录=/var/cache/man  
+ID=lp    家目录=/var/spool/lpd  
+ID=mail  家目录=/var/mail   
+ID=news  家目录=/var/spool/news     
+ID=uucp  家目录=/var/spool/uucp     
+ID=proxy         家目录=/bin    
+ID=www-data      家目录=/var/www    
+ID=backup        家目录=/var/backups

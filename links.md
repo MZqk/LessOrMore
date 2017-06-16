@@ -11,6 +11,8 @@ permalink: /links/
 ## 学习组
 [菜鸟教程](http://www.runoob.com/)
 
+[ArchLinux](https://bbs.archlinuxcn.org/)
+
 [实验楼](https://www.shiyanlou.com/)
 
 [慕课网](http://www.imooc.com/)
@@ -31,5 +33,13 @@ permalink: /links/
 
 [segmentfault](https://segmentfault.com/)
 
+[码云](https://git.oschina.net/)
+
+[v2ex](https://www.v2ex.com/)
+
+[linux中国](https://linux.cn/article-8605-1.html)
+
 ## 娱乐圈
 [利器](http://liqi.io/)
+
+[异次元软件](http://www.iplaysoft.com/)

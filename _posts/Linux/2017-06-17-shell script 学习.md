@@ -73,16 +73,16 @@ ll|逻辑的 OR|[[ $a -lt 100 ll $b -gt 100 ]] 返回 true
 ***
 ## 环境配置
 ***
-## 正则表达式
-***
 ## 流程控制
 ### if分支
->if [条件判断] ;then
+```
+if [条件判断] ;then
 	条件执行
 if
-
+```
 ### case分支
->case $变量 in
+```
+case $变量 in
 "变量1")
 	command1
 	;;
@@ -93,27 +93,59 @@ if
 	exit 1
 	；；
 esac
-
+```
 ### for循环
->for $变量 in var
+常用语法
+```
+for $变量 in var
 do
-	command
+  command
 done
-
+```
+c语言语法
+```
+num=n
+for ((a=1;a <= num; a+1 ))
+do
+  comand
+done
+```
 ### while循环
->while [条件判断]
+```
+while [条件判断]
 do
 	command
 done
-
+```
+c语言语法
+```
+((a=1))
+num=n
+while ((a <= num))
+do
+	command
+done
+```
 ### until循环
->until [条件判断]
+```
+until [条件判断]
 do
 	command
 done
-
+```
+### select结构
+```
+PS3=' 设置提示符字串 '
+select $变量 in var
+do
+	command 
+break
+ done
+```
 ## 函数
->function funname ()
+```
+function funname ()
 {
 	command
 }
+```

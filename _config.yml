@@ -28,7 +28,7 @@ github_username: MZqk
 highlighter: rouge
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown 
 
 baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
 

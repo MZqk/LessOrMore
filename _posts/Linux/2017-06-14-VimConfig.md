@@ -14,7 +14,7 @@ tag: vim
 {:toc}
 
 
-#插件
+# 插件
 ## Vundle 插件管理
 ```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/nerdtree
@@ -166,20 +166,6 @@ set ignorecase
 "map <Up> <Nop>
 "map <Down> <Nop>
 
-
-"<F2>开关行号
-function! HideNumber()
-        if(&relativenumber == &number)
-                set relativenumber! number!
-        elseif(&number)
-                set number!
-        else
-                set relativenumber!
-        endif
-                set number?
-endfunc
-nnoremap <F2> :call HideNumber()<CR>
-
 "python文件设置
 autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
 func! DeleteTrailingWS()
@@ -200,6 +186,27 @@ func SetTitle()
         call setline(1, "\#!/usr/bin/sh") 
     endif
 endfunc
+
+"<F2>开关行号
+function! HideNumber()
+        if(&relativenumber == &number)
+                set relativenumber! number!
+        elseif(&number)
+                set number!
+        else
+                set relativenumber!
+        endif
+                set number?
+endfunc
+nnoremap <F2> :call HideNumber()<CR>
+
+"==========================================================="
+" 设置pydiction
+"==========================================================="
+let g:pydiction_location='~/.vim/bundle/pydiction/complete-dict' 
+"菜单高度
+let g:pydiction_menu_height = 3
+
 "==========================================================="
 " 设置NerdTree
 "==========================================================="
@@ -215,6 +222,8 @@ let NERDTreeShowBookmarks=1
 " 是否显示隐藏文件
 let NERDTreeShowHidden=1
 
+"设置<F4>保存文件
+map <F4> :<ESC>:w<CR>
 
 
 "==========================================================="
@@ -230,6 +239,7 @@ call vundle#begin()
 " 让vundle管理插件版本
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'rkulla/pydiction'
 "
 "
 "
@@ -251,11 +261,4 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " 忽视插件改变缩进,可以使用以下替代:
 "filetype plugin on
-
-" 常用的命令
-" :PluginList       - 列出所有已配置的插件
-" :PluginInstall    - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate 
-" :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存
-" :PluginClean      - 除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件
-" :h vundle 查看帮助
 ```

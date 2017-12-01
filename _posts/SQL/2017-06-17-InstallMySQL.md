@@ -39,5 +39,7 @@ ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var
 
 mysql -u root -p 
 正常启动 
+root用户随机密码
+more /root/.mysql_secret
 
  

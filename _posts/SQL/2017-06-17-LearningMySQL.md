@@ -25,6 +25,9 @@ sudo apt-get install mysql-server
 登入mysql 
 >mysql -u username -p 
 
+设置密码
+>set password=password('root123')
+
 查看数据库
 >show databases
 
